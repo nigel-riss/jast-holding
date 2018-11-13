@@ -14,27 +14,23 @@ html(lang="ru")
             h1.main-title Hi, we&nbsp;are JAST holding.
 
             nav.nav
-                .nav__content
-                    .nav__logo
-                        a.logo(href="index.html")
-                            img.logo__img(src="", alt="")
-                    
-                    
-                    .nav__mobile-icon
-                        .mobile-icon
-                            .mobile-icon__line.mobile-icon__line-top
-                            .mobile-icon__line.mobile-icon__line-middle
-                            .mobile-icon__line.mobile-icon__line-bottom
+                .nav__button
+                    button.menu-button
+                        .menu-button__line.mobile-icon__line-top
+                        .menu-button__line.mobile-icon__line-middle
+                        .menu-button__line.mobile-icon__line-bottom
 
-                    .main-menu
-                        ul.main-menu__list
-                            li.main-menu__item
-                                a.main-menu__link(href="about.html") <span class="main-menu__link-numb">01</span> About us
-                            li.main-menu__item
-                                a.main-menu__link(href="projects.html") <span class="main-menu__link-numb">02</span> Our projects
-                            li.main-menu__item
-                                a.main-menu__link(href="partners.html") <span class="main-menu__link-numb">03</span> Partners
-                            li.main-menu__item
-                                a.main-menu__link(href="contacts.html") <span class="main-menu__link-numb">04</span> Contact Us
+                ul.nav__list
+                    li.nav__item
+                        a.nav__link#about(href="#") <span class="nav__num">01</span> About Us
+                    li.nav__item
+                        a.nav__link#projects(href="#") <span class="nav__num">01</span> Our Projects
+                    li.nav__item
+                        a.nav__link#partners(href="#") <span class="nav__num">01</span> Partners
+                    li.nav__item
+                        a.nav__link#contact(href="#") <span class="nav__num">01</span> Contact Us
+
+            .logo
+                img(src="./img/logo_white.svg", alt="Jast Holding logo")
 
         script(src="main.js")
