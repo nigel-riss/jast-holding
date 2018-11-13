@@ -12,7 +12,12 @@ gulp.task("watch", ()=> {
     browserSync.init({
         server: {
             baseDir: "dist",
-            port: 3002
+        },
+        notify: {
+            styles: {
+                top: 'auto',
+                bottom: 0
+            }
         }
     });
 
@@ -22,29 +27,29 @@ gulp.task("watch", ()=> {
     });
 
     // css
-    watch(dirs.sass, () => {
-        gulp.start("cssInject");
-    });
+    // watch(dirs.sass, () => {
+    //     gulp.start("cssInject");
+    // });
 
     // js
-    watch(dirs.js, () => {
-        gulp.start("jsChanged");
-    });
+    // watch(dirs.js, () => {
+    //     gulp.start("jsChanged");
+    // });
 });
 
 
-// html
+// pug
 gulp.task("pugChanged", ["pugRender"], () => {
     browserSync.reload();
 });
 
 // styles
-gulp.task("cssInject", ["styles"], () => {
-    gulp.src("./dist/styles.css")
-        .pipe(browserSync.stream());
-});
+// gulp.task("cssInject", ["styles"], () => {
+//     gulp.src("./dist/styles.css")
+//         .pipe(browserSync.stream());
+// });
 
 // js
-gulp.task("jsChanged", ["scripts"], () => {
-    browserSync.reload();
-});
+// gulp.task("jsChanged", ["scripts"], () => {
+//     browserSync.reload();
+// });
