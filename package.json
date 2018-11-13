@@ -1,0 +1,29 @@
+{
+  "name": "jast-holding",
+  "version": "1.0.0",
+  "description": "Jast Holding site",
+  "main": "gulpfile.babel.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-watch": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nigel-riss/jast-holding.git"
+  },
+  "author": "Yuriy Kurenkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nigel-riss/jast-holding/issues"
+  },
+  "homepage": "https://github.com/nigel-riss/jast-holding#readme"
+}

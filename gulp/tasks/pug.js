@@ -9,12 +9,10 @@ const dirs = {
 
 gulp.task('pugRender', function() {
     return gulp.src(dirs.src)
-        .pipe(pug({
-            path: ['src/pug-modules/']
-        }))
+        .pipe(pug())
         .on('error', onError((error) => {
             return {
-                title: 'Pug Error',
+                title: 'Pug',
                 message: error.message
             };
         }))
