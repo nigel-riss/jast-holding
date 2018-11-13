@@ -1,0 +1,73 @@
+.nav__content {
+    // box model
+    padding-top: 70px;
+}
+
+.nav__logo {
+    // positioning
+    position: absolute;
+    top: 135px;
+    left: 0;
+    z-index: -1;
+
+    // box model
+    width: 100%;
+    max-width: 280px;
+
+    @include atTablet {
+        // positioning
+        top: 222px;
+        left: auto;
+        right: -55px;
+        
+        // box model
+        max-width: 480px;
+        margin-left: auto;
+    }
+
+    @include atDesktopS {
+        // positioning
+        top: 65px;
+    }
+}
+
+.nav__slogan {
+    // box model
+    margin: 0;
+
+    // typography
+    color: #ffffff;
+    font-family: $baseFont;
+    font-size: 3rem;
+
+    @include atTablet {
+        // box model
+        max-width: 390px;
+
+        br {
+            // box model
+            display: none;
+        }
+    }
+
+    @include atDesktopS {
+        // box model
+        max-width: 450px;
+
+        // typography
+        font-size: 3.8rem;
+    }
+}
+
+.nav__slogan-stress {
+    // typography
+    text-transform: capitalize;
+}
+
+.nav__mobile-icon {
+    // positioning
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 100;
+}

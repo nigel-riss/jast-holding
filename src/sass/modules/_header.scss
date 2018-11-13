@@ -1,0 +1,38 @@
+.header {
+    // box model
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 55px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.header__logo {
+    // box model
+    width: 100%;
+    max-width: 40px;
+}
+
+.header__close-btn {
+    // box model
+    display: none;
+
+    @include atTablet {
+        // box model
+        display: block;
+
+        // typography
+        font-family: $baseFont;
+        font-size: 4.5rem;
+        line-height: 38px;
+        color: $brandColor;
+        font-weight: 100;
+        // visual
+        background: none;
+        box-shadow: none;
+        border: none;
+        transform: rotate(45deg);
+    }
+}
