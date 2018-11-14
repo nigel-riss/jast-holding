@@ -27,9 +27,9 @@ gulp.task("watch", ()=> {
     });
 
     // css
-    // watch(dirs.sass, () => {
-    //     gulp.start("cssInject");
-    // });
+    watch(dirs.sass, () => {
+        gulp.start("cssInject");
+    });
 
     // js
     // watch(dirs.js, () => {
@@ -44,10 +44,10 @@ gulp.task("pugChanged", ["pugRender"], () => {
 });
 
 // styles
-// gulp.task("cssInject", ["styles"], () => {
-//     gulp.src("./dist/styles.css")
-//         .pipe(browserSync.stream());
-// });
+gulp.task("cssInject", ["styles"], () => {
+    gulp.src("./dist/styles.css")
+        .pipe(browserSync.stream());
+});
 
 // js
 // gulp.task("jsChanged", ["scripts"], () => {
