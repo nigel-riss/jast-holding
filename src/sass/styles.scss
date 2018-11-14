@@ -2,7 +2,7 @@
 @import "fonts/fonts";
 
 // normalize
-// @import "normalize.css/normalize.css";
+@import "normalize.css";
 
 // global
 @import "base/vars";
@@ -10,9 +10,9 @@
 @import "base/global";
 
 // elements
+@import "modules/header";
 // @import "modules/mobile-icon";
 // @import "modules/nav";
-// @import "modules/main-header";
 // @import "modules/main-menu";
 // @import "modules/logo";
 // @import "modules/header";

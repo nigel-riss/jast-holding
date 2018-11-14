@@ -1,38 +1,77 @@
-.header {
+.main-header {
+    // positioning
+    position: relative;
+
+    // box model
+    padding: 50px;
+    min-height: 100vh;
+
+    // visual
+    background-color: $brand;
+}
+
+.main-title {
+    // typography
+    color: $light;
+    font-size: 4rem;
+}
+
+.nav {
+    // positioning
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
     // box model
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 55px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+
+    // visual
+    background-color: $dark;
 }
 
-.header__logo {
+.nav__button {
+    // positioning
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+.nav__list {
     // box model
-    width: 100%;
-    max-width: 40px;
+    margin: 0;
+    padding: 0;
+
+    // list
+    list-style: none;
 }
 
-.header__close-btn {
+.nav__item {
     // box model
-    display: none;
-
-    @include atTablet {
-        // box model
-        display: block;
-
-        // typography
-        font-family: $baseFont;
-        font-size: 4.5rem;
-        line-height: 38px;
-        color: $brandColor;
-        font-weight: 100;
-        // visual
-        background: none;
-        box-shadow: none;
-        border: none;
-        transform: rotate(45deg);
-    }
+    margin: 25px;
 }
+
+.nav__link {
+    // typography
+    color: $light;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.nav__num {
+    // positioning
+    transform: translateY(10px);
+
+    // box model
+    display: inline-block;
+    padding-right: 30px;
+    vertical-align: baseline;
+
+    // typography
+    font-size: 4rem;
+}
+
