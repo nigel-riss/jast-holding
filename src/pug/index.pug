@@ -40,6 +40,7 @@ html(lang="ru")
                 p Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem reiciendis possimus. Officiis, laudantium aliquam. Laboriosam hic excepturi nulla nostrum, veritatis, quis eius quas magni nemo, odit sequi eveniet quam.
                 p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa cumque eligendi at illo ratione architecto, blanditiis nisi voluptatum, vel accusamus officia mollitia maxime inventore iusto aspernatur aliquam, veritatis magni sunt.
 
+
         section.projects
             h2.projects__title Our<br> projects
             .project__content
@@ -54,5 +55,20 @@ html(lang="ru")
                 article.project
                     h3.project__title Lens Vens shop
                     p.project__description Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim quidem, itaque dicta, non iusto quod earum architecto quae neque mollitia voluptas. Magni ea aspernatur accusamus nulla porro sequi totam quaerat!
+
+
+        section.contact
+            h2.contact__title Contact<br> us
+            .contact__address
+            a.contact__phone(href="tel:+")
+            a.contact__mail(href="mailto:")
+
+            .contact__form
+                form.form(action="")
+                    input(type="text" name="c_name")
+                    imput(type="email" name="c_email")
+                    textarea(name="c_message", cols="30", rows="10")
+                    input(type="submit", value="Send message")
+
 
         script(src="main.js")
