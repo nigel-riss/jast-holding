@@ -11,6 +11,9 @@
 }
 
 .main-title {
+    // box model
+    width: 200px;
+    
     // typography
     color: $light;
     font-size: 4rem;
@@ -31,13 +34,11 @@
 
     // visual
     background-color: $dark;
-}
 
-.nav__button {
-    // positioning
-    position: fixed;
-    top: 50px;
-    right: 50px;
+    &--hidden {
+        // box model
+        display: none;
+    }
 }
 
 .nav__list {

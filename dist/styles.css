@@ -340,6 +340,7 @@ body {
   background-color: #4256f5; }
 
 .main-title {
+  width: 200px;
   color: #ffffff;
   font-size: 4rem; }
 
@@ -353,11 +354,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #000000; }
-
-.nav__button {
-  position: fixed;
-  top: 50px;
-  right: 50px; }
+  .nav--hidden {
+    display: none; }
 
 .nav__list {
   margin: 0;
@@ -379,3 +377,11 @@ body {
   padding-right: 30px;
   vertical-align: baseline;
   font-size: 4rem; }
+
+.menu-button {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  height: 32px;
+  width: 32px;
+  font-size: 0; }
