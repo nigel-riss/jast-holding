@@ -1,0 +1,16 @@
+.project {
+    // box model
+    margin-bottom: 60px;
+}
+
+.project__title {
+    // typography
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.project__description {
+    // typography
+    color: $brand;
+    line-height: 1.75;
+}

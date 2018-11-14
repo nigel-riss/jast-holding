@@ -400,3 +400,21 @@ body {
 
 .about__content p {
   line-height: 1.75; }
+
+.projects {
+  padding: 50px;
+  min-height: 100vh; }
+
+.projects__title {
+  font-size: 4rem; }
+
+.project {
+  margin-bottom: 60px; }
+
+.project__title {
+  font-size: 2rem;
+  font-weight: 400; }
+
+.project__description {
+  color: #4256f5;
+  line-height: 1.75; }
