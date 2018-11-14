@@ -344,6 +344,14 @@ body {
   color: #ffffff;
   font-size: 4rem; }
 
+.menu-button {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  height: 32px;
+  width: 32px;
+  font-size: 0; }
+
 .nav {
   position: fixed;
   top: 0;
@@ -378,10 +386,17 @@ body {
   vertical-align: baseline;
   font-size: 4rem; }
 
-.menu-button {
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  height: 32px;
-  width: 32px;
-  font-size: 0; }
+.about {
+  min-height: 100vh;
+  padding: 50px;
+  background-color: #000000; }
+
+.about__title {
+  color: #ffffff;
+  font-size: 4rem; }
+
+.about__content {
+  color: #ffffff; }
+
+.about__content p {
+  line-height: 1.75; }

@@ -1,0 +1,24 @@
+.about {
+    // box model
+    min-height: 100vh;
+    padding: 50px;
+
+    // visual
+    background-color: $dark;
+}
+
+.about__title {
+    // typography
+    color: $light;
+    font-size: 4rem;
+}
+
+.about__content {
+    // typography
+    color: $light;
+}
+
+.about__content p {
+    // typography
+    line-height: 1.75;
+}
