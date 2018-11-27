@@ -10,14 +10,18 @@
 @import "base/global";
 
 // elements
-@import "modules/header";
+@import "modules/main-header";
+@import "modules/main-title";
 @import "modules/menu-button";
 @import "modules/nav";
+@import "modules/logo";
 
 @import "modules/about";
 
 @import "modules/projects";
 @import "modules/project";
+
+@import "modules/contact";
 // @import "modules/main-menu";
 // @import "modules/logo";
 // @import "modules/header";

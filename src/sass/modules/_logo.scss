@@ -1,10 +1,19 @@
 .logo {
+    // positioning
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+
     // box model
     display: block;
+    // width: calc(100% - 100px);
+    max-width: 220px;
 }
 
-.logo__img {
+.logo img {
     // box model
     display: block;
     width: 100%;
+    // border: 1px solid red;
 }
