@@ -1,0 +1,11 @@
+.main-header {
+    // positioning
+    position: relative;
+
+    // box model
+    padding: 50px;
+    min-height: 100vh;
+
+    // visual
+    background-color: $brand;
+}

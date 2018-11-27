@@ -1,0 +1,12 @@
+.main-title {
+    // positioning
+    position: relative;
+    z-index: 2;
+
+    // box model
+    width: 200px;
+
+    // typography
+    color: $light;
+    font-size: 3.5rem;
+}
