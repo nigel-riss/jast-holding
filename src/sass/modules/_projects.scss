@@ -1,12 +1,17 @@
 .projects {
     // box model
-    padding: 50px;
+    padding: 30px;
     min-height: 100vh;
+
+    @include atMobile {
+        // box model
+        padding: 50px;
+    }
 }
 
 .projects__title {
     // typography
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .projects__content {

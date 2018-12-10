@@ -1,16 +1,21 @@
 .about {
     // box model
     min-height: 100vh;
-    padding: 50px;
+    padding: 30px;
 
     // visual
     background-color: $dark;
+
+    @include atMobile {
+        // box model
+        padding: 50px;
+    }
 }
 
 .about__title {
     // typography
     color: $light;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .about__content {

@@ -1,5 +1,5 @@
-@mixin atMinMobile {
-    @media(max-width: 374px) {
+@mixin atMobile {
+    @media(min-width: 374px) {
         @content;
     }
 }

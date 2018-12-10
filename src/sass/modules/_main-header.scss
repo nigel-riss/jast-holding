@@ -3,9 +3,17 @@
     position: relative;
 
     // box model
-    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
     min-height: 100vh;
-
+    
     // visual
     background-color: $brand;
+    
+    @include atMobile {
+        // box model
+        padding: 50px;
+    }
 }

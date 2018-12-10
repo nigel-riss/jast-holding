@@ -1,12 +1,15 @@
 .main-title {
     // positioning
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    bottom: 67vw;
+    left: 50px;
+    z-index: 2; 
 
     // box model
-    width: 200px;
+    width: 50%;
 
     // typography
     color: $light;
-    font-size: 3.5rem;
+    font-size: 12vw;
+    line-height: 1.25;
 }

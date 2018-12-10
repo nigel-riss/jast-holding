@@ -1,14 +1,13 @@
 .logo {
     // positioning
     position: absolute;
-    bottom: 50px;
+    bottom: 100px;
     right: 50px;
     z-index: 1;
 
     // box model
     display: block;
-    // width: calc(100% - 100px);
-    max-width: 220px;
+    width: calc(100vw - 100px);
 }
 
 .logo img {

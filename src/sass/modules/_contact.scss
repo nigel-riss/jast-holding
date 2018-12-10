@@ -1,4 +1,17 @@
 .contact {
+    // box model
+    padding: 30px;
+
     // visual
     background-color: $brand;
+
+    @include atMobile {
+        // box model
+        padding: 50px;
+    }
+}
+
+.contact__title {
+    // typography
+    font-size: 3rem;
 }
