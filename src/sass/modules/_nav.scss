@@ -15,9 +15,23 @@
     // visual
     background-color: $dark;
 
+    @include atTablet {
+        // positioning
+        position: absolute;
+        top: auto;
+
+        // visual
+        background-color: transparent;
+    }
+
     &--hidden {
         // box model
         display: none;
+
+        @include atTablet {
+            // box model
+            display: block;
+        }
     }
 }
 
@@ -28,6 +42,12 @@
 
     // list
     list-style: none;
+
+    @include atTablet {
+        // box model
+        display: flex;
+        padding: 45px;
+    }
 }
 
 .nav__item {
@@ -54,4 +74,14 @@
 
     // typography
     font-size: 4rem;
+
+    @include atTablet {
+        // box model
+        display: block;
+        margin-bottom: 1rem;
+
+        // typography
+        font-size: 3rem;
+        font-weight: 300;
+    }
 }

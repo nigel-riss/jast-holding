@@ -12,4 +12,19 @@
     color: $light;
     font-size: 12vw;
     line-height: 1.25;
+
+    @include atTablet {
+        // positioning
+        position: relative;
+        bottom: auto;
+        left: auto;
+
+        // box model
+        margin: 0;
+        margin-top: 100px;
+        width: 240px;
+
+        // typography
+        font-size: 4rem;
+    }
 }

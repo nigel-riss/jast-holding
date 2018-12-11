@@ -8,6 +8,17 @@
     // box model
     display: block;
     width: calc(100vw - 100px);
+
+    @include atTablet {
+        // positioning
+        bottom: auto;
+        right: auto;
+        top: 70px;
+        left: 70px;
+
+        // box model
+        width: 45px;
+    }
 }
 
 .logo img {

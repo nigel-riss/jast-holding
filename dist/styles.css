@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url("./fonts/Roboto-Light.woff2") format("woff2"), url("./fonts/Roboto-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("./fonts/Roboto-Bold.woff2") format("woff2"), url("./fonts/Roboto-Bold.woff") format("woff");
+  font-family: 'IBM Plex Sans';
+  src: url("./fonts/IBMPlexSans-Bold.woff2") format("woff2"), url("./fonts/IBMPlexSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url("./fonts/Roboto-Regular.woff2") format("woff2"), url("./fonts/Roboto-Regular.woff") format("woff");
+  font-family: 'IBM Plex Sans';
+  src: url("./fonts/IBMPlexSans.woff2") format("woff2"), url("./fonts/IBMPlexSans.woff") format("woff");
   font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url("./fonts/IBMPlexSans-Light.woff2") format("woff2"), url("./fonts/IBMPlexSans-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -323,7 +323,7 @@ template {
 
 html {
   font-size: 14px;
-  font-family: "Roboto"; }
+  font-family: "IBM Plex Sans", Arial, Helvetica, sans-serif; }
 
 body {
   box-sizing: border-box; }
@@ -339,11 +339,17 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   padding: 30px;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 165vw;
   background-color: #4256f5; }
   @media (min-width: 374px) {
     .main-header {
       padding: 50px; } }
+  @media (min-width: 600px) {
+    .main-header {
+      padding: 70px;
+      min-height: 660px;
+      max-height: 1000px; } }
 
 .main-title {
   position: absolute;
@@ -354,6 +360,15 @@ body {
   color: #ffffff;
   font-size: 12vw;
   line-height: 1.25; }
+  @media (min-width: 600px) {
+    .main-title {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      margin: 0;
+      margin-top: 100px;
+      width: 240px;
+      font-size: 4rem; } }
 
 .menu-button {
   position: fixed;
@@ -362,6 +377,9 @@ body {
   height: 32px;
   width: 32px;
   font-size: 0; }
+  @media (min-width: 600px) {
+    .menu-button {
+      display: none; } }
 
 .nav {
   position: fixed;
@@ -373,13 +391,25 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #000000; }
+  @media (min-width: 600px) {
+    .nav {
+      position: absolute;
+      top: auto;
+      background-color: transparent; } }
   .nav--hidden {
     display: none; }
+    @media (min-width: 600px) {
+      .nav--hidden {
+        display: block; } }
 
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none; }
+  @media (min-width: 600px) {
+    .nav__list {
+      display: flex;
+      padding: 45px; } }
 
 .nav__item {
   margin: 25px; }
@@ -396,6 +426,12 @@ body {
   padding-right: 30px;
   vertical-align: baseline;
   font-size: 4rem; }
+  @media (min-width: 600px) {
+    .nav__num {
+      display: block;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+      font-weight: 300; } }
 
 .logo {
   position: absolute;
@@ -404,6 +440,13 @@ body {
   z-index: 1;
   display: block;
   width: calc(100vw - 100px); }
+  @media (min-width: 600px) {
+    .logo {
+      bottom: auto;
+      right: auto;
+      top: 70px;
+      left: 70px;
+      width: 45px; } }
 
 .logo img {
   display: block;
