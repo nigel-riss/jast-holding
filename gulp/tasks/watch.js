@@ -1,55 +1,57 @@
-const gulp = require("gulp");
-const watch = require("gulp-watch");
-const browserSync = require("browser-sync").create();
+import gulp from 'gulp';
+import browserSync from 'browser-sync';
+import watch from 'gulp-watch';
+// import { start } from 'repl';
 
 const dirs = {
-    pug: "./src/**/*.pug",
-    sass: "./src/sass/**/*.scss",
-    js: "./src/js/**/*.js"
-}
+  pug: './src/pug/**/*.pug',
+  sass: './src/sass/**/*.scss',
+  css: './dist/styles.css',
+  js: './src/js/**/*.js'
+};
 
-gulp.task("watch", ()=> {
-    browserSync.init({
-        server: {
-            baseDir: "dist",
-        },
-        notify: {
-            styles: {
-                top: 'auto',
-                bottom: 0
-            }
-        }
-    });
+gulp.task('watch', () => {
+  browserSync.init({
+    server: {
+      baseDir: 'dist'
+    },
+    // this is needed to move notify popup to bottom, cause it usually overlaps page elements on its default position
+    notify: {
+      styles: {
+        top: 'auto',
+        bottom: 0
+      }
+    }
+  });
 
-    // pug
-    watch(dirs.pug, () => {
-        gulp.start("pugChanged");
-    });
+  // pug
+  watch(dirs.pug, () => {
+    gulp.start('pugChanged');
+  });
 
-    // css
-    watch(dirs.sass, () => {
-        gulp.start("cssInject");
-    });
+  // style
+  watch(dirs.sass, () => {
+    gulp.start('cssInject');
+  });
 
-    // js
-    // watch(dirs.js, () => {
-    //     gulp.start("jsChanged");
-    // });
+  // scripts
+  watch(dirs.js, () => {
+    gulp.start('jsChanged');
+  });
 });
 
-
 // pug
-gulp.task("pugChanged", ["pugRender"], () => {
-    browserSync.reload();
+gulp.task('pugChanged', ['pugRender'], () => {
+  browserSync.reload();
 });
 
 // styles
-gulp.task("cssInject", ["styles"], () => {
-    gulp.src("./dist/styles.css")
-        .pipe(browserSync.stream());
+gulp.task('cssInject', ['styles'], () => {
+  gulp.src(dirs.css)
+    .pipe(browserSync.stream());
 });
 
-// js
-// gulp.task("jsChanged", ["scripts"], () => {
-//     browserSync.reload();
-// });
+// scripts
+gulp.task('jsChanged', ['scripts'], () => {
+  browserSync.reload();
+});
