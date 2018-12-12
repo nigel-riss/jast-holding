@@ -1,4 +1,3 @@
 import MobileMenu from "./modules/MobileMenu";
 
 new MobileMenu();
-alert('helo');

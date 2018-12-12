@@ -5,30 +5,40 @@
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    z-index: 9;
 
     // box model
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
     // visual
     background-color: $dark;
+    transition: all 0.3s ease-out;
 
     @include atTablet {
         // positioning
         position: absolute;
         top: auto;
+        right: auto;
+        left: 0;
+
+        // box model
+        display: block;
 
         // visual
         background-color: transparent;
     }
 
     &--hidden {
-        // box model
-        display: none;
+        // positioning
+        left: -110%;
 
         @include atTablet {
+            // positioning
+            left: 0;
+
             // box model
             display: block;
         }

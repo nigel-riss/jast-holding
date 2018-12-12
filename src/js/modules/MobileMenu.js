@@ -1,26 +1,33 @@
 class MobileMenu {
-    constructor() {
-        this.events();
-    }
+  constructor() {
+    this.menuButton = document.querySelector('.menu-button');
+    this.menu = document.querySelector('.nav'),
+    this.menuLinks = document.querySelectorAll('.main-menu__link');
 
-    events() {
-        let menuIcon = document.querySelector('.mobile-icon'),
-            mobileMenu = document.querySelector('.main-menu'),
-            menuLinks = document.querySelectorAll('.main-menu__link');
-        
-        menuIcon.addEventListener('click', () => {
-            menuIcon.classList.toggle('mobile-icon--active');
-            mobileMenu.classList.toggle('main-menu--active');
-        });
+    this.events();
+  }
 
-        for(let i = 0; i < menuLinks.length; i++) {
-            let link = menuLinks[i];
-            link.addEventListener('click', () => {
-                menuIcon.classList.remove('mobile-icon--active');
-                mobileMenu.classList.remove('main-menu--active');
-            });
-        }
-    }
+  events() {
+    this.menuButton.addEventListener('click', () => {
+      this.toggleMenu();
+    });
+    // for(let i = 0; i < menuLinks.length; i++) {
+    //     let link = menuLinks[i];
+    //     link.addEventListener('click', () => {
+    //         menuIcon.classList.remove('mobile-icon--active');
+    //         mobileMenu.classList.remove('main-menu--active');
+    //     });
+    // }
+  }
+
+  reset() {
+
+  }
+
+  toggleMenu() {
+    this.menu.classList.toggle('nav--hidden');
+    this.menuButton.classList.toggle('menu-button--close');
+  }
 }
 
 export default MobileMenu;

@@ -3,16 +3,94 @@
     position: fixed;
     top: 50px;
     right: 50px;
-
+    z-index: 11;
+    transform-origin: center;
+    
     // box model
-    height: 32px;
+    height: 27px;
     width: 32px;
     
     // typography
     font-size: 0;
-
+    
+    // visual
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    
     @include atTablet {
         // box model
         display: none;
     }
+}
+
+.menu-button:hover {
+    .menu-button__line--top {
+        // positioning
+        top: 4px;
+    }
+    
+    .menu-button__line--bottom {
+        // positioning
+        top: 18px;
+    }
+}
+
+.menu-button--close {
+    .menu-button__line--top {
+        // positioning
+        top: 11px;
+        transform: rotate(45deg);
+    }
+    
+    .menu-button__line--middle {
+        // visual
+        opacity: 0;
+    }
+    
+    .menu-button__line--bottom {
+        // positioning
+        top: 11px;
+        transform: rotate(-45deg);
+    }
+
+    &:hover {
+        .menu-button__line--top,
+        .menu-button__line--bottom {
+            // positioning
+            top: 11px;
+        }
+    }
+}
+
+.menu-button__line {
+    // positioning
+    position: absolute;
+    left: 0;
+    
+    // box model
+    height: 3px;
+    width: 100%;
+    
+    // visual
+    background-color: #fff;
+    transition: all 0.15s ease-out;
+    transform-origin: center center;
+}
+
+.menu-button__line--top {
+    // positioning
+    top: 0;
+}
+
+.menu-button__line--middle {
+    // positioning
+    top: 11px;
+    transition: all 0s ease-out;
+}
+
+.menu-button__line--bottom {
+    // positioning
+    top: 22px;
 }
