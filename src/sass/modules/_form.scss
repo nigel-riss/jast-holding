@@ -1,0 +1,60 @@
+.form {
+
+}
+
+.form__input {
+    // box model
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: 100%;
+
+    // typography
+    color: $light;
+    font-size: 1.125rem;
+    
+    // visual
+    background-color: $brand;
+    border: 1px solid $light;
+    outline: none;
+    transition: all 0.25s ease-out;
+    
+    &::placeholder {
+        // typography
+        color: $light;
+    }
+
+    &:focus {
+        // typography
+        color: $dark;
+
+        // visual
+        background-color: $light;
+        border: 1px solid $dark;
+    }
+}
+
+.form__submit {
+    // box model
+    padding: 10px 20px;
+    width: 100%;
+
+    // typography
+    color: $brand;
+    font-size: 1.125rem;
+    font-weight: 700;
+
+    // visual
+    background-color: $light;
+    border: 1px solid $light;
+    outline: none;
+
+    &:focus,
+    &:hover {
+        // typography
+        color: $light;
+
+        // visual
+        background-color: $brand;
+        transition: all 0.25s ease-out;
+    }
+}

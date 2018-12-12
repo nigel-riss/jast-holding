@@ -32,6 +32,7 @@ html(lang="ru")
                     li.nav__item
                         a.nav__link#contact(href="#") <span class="nav__num">04</span> Контакты
 
+
         section.about
             h2.about__title О нас
             .about__content
@@ -64,16 +65,16 @@ html(lang="ru")
 
         section.contact
             h2.contact__title Свяжитесь<br> с нами
-            .contact__address
-            a.contact__phone(href="tel:+")
-            a.contact__mail(href="mailto:")
+            .contact__address 236006 Россия, <br>г. Калининград, <br>ул. Театральная, 35 <br>офис 606
+            a.contact__phone(href="tel:+88002224608") 8 (800) 222-46-08
+            a.contact__mail(href="mailto:info@jastholding.com") info@jastholding.com
 
             .contact__form
                 form.form(action="")
-                    input(type="text" name="c_name")
-                    imput(type="email" name="c_email")
-                    textarea(name="c_message", cols="30", rows="10")
-                    input(type="submit", value="Send message")
+                    input.form__input(type="text" name="c_name" placeholder="Имя")
+                    input.form__input(type="email" name="c_email" placeholder="E-mail")
+                    textarea.form__input(name="c_message", cols="30", rows="10" placeholder="Сообщение")
+                    input.form__submit(type="submit", value="Отправить сообщение")
 
 
         script(src="main.js")

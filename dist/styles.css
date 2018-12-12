@@ -551,4 +551,57 @@ body {
       padding: 50px; } }
 
 .contact__title {
+  color: #ffffff;
   font-size: 3rem; }
+
+.contact__address {
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.5; }
+
+.contact__phone {
+  display: block;
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  text-decoration: none; }
+
+.contact__mail {
+  display: block;
+  margin-bottom: 60px;
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  text-decoration: none; }
+
+.form__input {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.125rem;
+  background-color: #4256f5;
+  border: 1px solid #ffffff;
+  outline: none;
+  transition: all 0.25s ease-out; }
+  .form__input::placeholder {
+    color: #ffffff; }
+  .form__input:focus {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000; }
+
+.form__submit {
+  padding: 10px 20px;
+  width: 100%;
+  color: #4256f5;
+  font-size: 1.125rem;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  outline: none; }
+  .form__submit:focus, .form__submit:hover {
+    color: #ffffff;
+    background-color: #4256f5;
+    transition: all 0.25s ease-out; }

@@ -13,5 +13,39 @@
 
 .contact__title {
     // typography
+    color: $light;
     font-size: 3rem;
+}
+
+.contact__address {
+    // box model
+    margin-bottom: 40px;
+
+    // typography
+    color: $light;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.contact__phone {
+    // box model
+    display: block;
+
+    // typography
+    color: $light;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.contact__mail {
+    // box model
+    display: block;
+    margin-bottom: 60px;
+
+    // typography
+    color: $light;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    text-decoration: none;
 }
