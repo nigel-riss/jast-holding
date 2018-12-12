@@ -543,6 +543,37 @@ body {
   color: #4256f5;
   line-height: 1.75; }
 
+.partners {
+  min-height: 100vh;
+  padding: 30px; }
+  @media (min-width: 374px) {
+    .partners {
+      padding: 50px; } }
+
+.partners__title {
+  color: #000000;
+  font-size: 3rem; }
+
+.partners__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.partners__subtitle {
+  width: 100%;
+  color: #4256f5;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: left; }
+
+.partner {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 40px; }
+
+.partner img {
+  width: 100%; }
+
 .contact {
   padding: 30px;
   background-color: #4256f5; }

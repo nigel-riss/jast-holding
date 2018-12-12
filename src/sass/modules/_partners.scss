@@ -1,0 +1,34 @@
+.partners {
+    // box model
+    min-height: 100vh;
+    padding: 30px;
+
+    @include atMobile {
+        // box model
+        padding: 50px;
+    }
+}
+
+.partners__title {
+    // typography
+    color: $dark;
+    font-size: 3rem;
+}
+
+.partners__content {
+    // box model
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partners__subtitle {
+    // box model
+    width: 100%;
+
+    // typography
+    color: $brand;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+}
