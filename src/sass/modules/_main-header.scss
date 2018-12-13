@@ -24,4 +24,10 @@
         min-height: 660px;
         max-height: 1000px;
     }
+
+    @include atDesktopS {
+        // box model
+        min-height: 620px;
+        max-height: 700px;
+    }
 }

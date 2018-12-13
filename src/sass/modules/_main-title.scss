@@ -27,4 +27,10 @@
         // typography
         font-size: 4rem;
     }
+
+    @include atDesktopS {
+        // box model
+        margin-top: 0;
+        width: 500px;
+    }
 }

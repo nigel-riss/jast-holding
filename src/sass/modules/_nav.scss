@@ -58,11 +58,22 @@
         display: flex;
         padding: 45px;
     }
+
+    @include atDesktopS {
+        // box model
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
 }
 
 .nav__item {
     // box model
     margin: 25px;
+
+    @include atDesktopS {
+        // box model
+        margin: 10px 25px;
+    }
 }
 
 .nav__link {
@@ -93,5 +104,10 @@
         // typography
         font-size: 3rem;
         font-weight: 300;
+    }
+
+    @include atDesktopS {
+        // typography
+        font-size: 2.25rem;
     }
 }

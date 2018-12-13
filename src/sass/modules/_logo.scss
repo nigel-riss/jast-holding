@@ -19,11 +19,22 @@
         // box model
         width: 45px;
     }
+
+    @include atDesktopS {
+        // positioning
+        top: auto;
+        bottom: 70px;
+        left: auto;
+        right: 70px;
+
+        // box model
+        width: 420px;
+        max-height: calc(100% - 140px);
+    }
 }
 
 .logo img {
     // box model
     display: block;
     width: 100%;
-    // border: 1px solid red;
 }

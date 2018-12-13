@@ -10,17 +10,43 @@
         // box model
         padding: 50px;
     }
+
+    @include atDesktopS {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+        min-height: 620px;
+        max-height: 700px;
+        padding: 70px;
+    }
 }
 
 .about__title {
     // typography
     color: $light;
     font-size: 3rem;
+
+    @include atDesktopS {
+        // box model
+        margin: 0;
+
+        // typography
+        font-size: 4rem;
+    }
 }
 
 .about__content {
     // typography
     color: $light;
+
+    @include atDesktopS {
+        // box model
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 }
 
 .about__content p {

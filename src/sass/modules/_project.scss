@@ -1,9 +1,17 @@
 .project {
     // box model
     margin-bottom: 60px;
+
+    @include atDesktopS {
+        // box model
+        margin-bottom: 10px;
+    }
 }
 
 .project__title {
+    // box model
+    margin-bottom: 0.5rem;
+
     // typography
     font-size: 2rem;
     font-weight: 400;
