@@ -9,12 +9,44 @@
         // box model
         padding: 50px;
     }
+
+    @include atDesktopS {
+        // box model
+        padding: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        min-height: 620px;
+        max-height: 700px;
+    }
+
+    @include atDesktopM {
+        // box model
+        padding: 70px calc((100% - 1060px) / 2);
+        min-height: 760px;
+        max-height: 1000px;
+    }
 }
 
 .contact__title {
     // typography
     color: $light;
     font-size: 3rem;
+
+    @include atDesktopS {
+        // box model
+        margin: 0;
+        margin-bottom: 2rem;
+
+        // typography
+        font-size: 4rem;
+    }
+
+    @include atDesktopM {
+        // typography
+        font-size: 5rem;
+    }
 }
 
 .contact__address {
@@ -48,4 +80,20 @@
     font-size: 1.125rem;
     line-height: 1.5;
     text-decoration: none;
+}
+
+.contact__form {
+    @include atDesktopS {
+        // box model
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+
+    @include atDesktopM {
+        // box model
+        padding: 0;
+    }
 }

@@ -1,10 +1,20 @@
 .project {
     // box model
-    margin-bottom: 60px;
+    display: block;
+    margin-bottom: 40px;
+
+    // typography
+    text-decoration: none;
 
     @include atDesktopS {
         // box model
         margin-bottom: 10px;
+    }
+
+    &:hover {
+        // typography
+        color: $light;
+        text-decoration: underline;
     }
 }
 
@@ -13,6 +23,8 @@
     margin-bottom: 0.5rem;
 
     // typography
+    color: $light;
+    // color: $dark;
     font-size: 2rem;
     font-weight: 400;
 
@@ -20,11 +32,19 @@
         // typography
         font-size: 2.5rem;
     }
+
+    small {
+        // typography
+        color: $dark;
+        font-size: 1em;
+        font-weight: 300;
+    }
 }
 
 .project__description {
     // typography
-    color: $brand;
+    color: $dark;
+    color: $light;
     line-height: 1.75;
 
     @include atDesktopM {

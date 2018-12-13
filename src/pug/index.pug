@@ -36,28 +36,28 @@ html(lang="ru")
         section.about
             h2.about__title О нас
             .about__content
-                p Наша деятельность распространяется преимущественно на франчайзинговом рынке. Компания была основана в 2016 году, меньше чем за два года мы вывели на рынок три успешных проекта, в общей сложности насчитывающие более 200&nbsp;партнеров. Мы ориентированы на быстрое масштабирование среднесрочных и долгосрочных трендовых бизнес-направлений, умеем их находить и прогнозировать, что&nbsp;позволяет быстро расти нам и нашим партнерам.
-                p Иными словами наша компания занимается построением франчайзинговых сетей. Мы находим или создаем продукт, на&nbsp;основе которого строим федеральный бизнес, за счет привлечения партнеров и инвесторов со всей России и СНГ.
+                p Наша деятельность распространяется преимущественно на франчайзинговом рынке. Компания была основана в 2016 году, меньше чем за два года мы вывели на рынок три успешных проекта, в общей сложности насчитывающие более 200&nbsp;партнеров. Мы ориентированы на&nbsp;быстрое масштабирование среднесрочных и долгосрочных трендовых бизнес-направлений, умеем их находить и прогнозировать, что&nbsp;позволяет быстро расти нам и нашим партнерам.
+                p Иными словами наша компания занимается построением франчайзинговых сетей. Мы находим или создаем продукт, на&nbsp;основе которого строим федеральный бизнес, за счет привлечения партнеров и&nbsp;инвесторов со всей России и СНГ.
 
 
         section.projects
             h2.projects__title Наши<br> проекты
             .projects__content
-                article.project
-                    h3.project__title JAST Charger
+                a(href="#").project
+                    h3.project__title JAST Charger <small>&rarr;</small>
                     p.project__description Деятельность в сфере HORECA и маркетинга.
 
-                article.project
-                    h3.project__title JAST agency
+                a(href="#").project
+                    h3.project__title JAST agency <small>&rarr;</small>
                     p.project__description Маркетинговые стратегии, Digital, Консалтинг.
 
-                article.project
-                    h3.project__title IZIway-shop
+                a(href="#").project
+                    h3.project__title IZIway-shop <small>&rarr;</small>
                     p.project__description Интернет-магазин брендовой одежды и обуви. Ритейл.
 
-                article.project
-                    h3.project__title Lens Vens shop
-                    p.project__description «LensVens Shop» - это магазин кроссовок в инстаграм, всё максимально просто.
+                a(href="#").project
+                    h3.project__title Lens Vens shop <small>&rarr;</small>
+                    p.project__description «LensVens Shop» - это магазин кроссовок в инстаграм, всё&nbsp;максимально просто.
 
 
         section.partners
@@ -100,8 +100,9 @@ html(lang="ru")
 
             .contact__form
                 form.form(action="")
-                    input.form__input(type="text" name="c_name" placeholder="Имя")
-                    input.form__input(type="email" name="c_email" placeholder="E-mail")
+                    .form__input-set
+                        input.form__input(type="text" name="c_name" placeholder="Имя")
+                        input.form__input(type="email" name="c_email" placeholder="E-mail")
                     textarea.form__input(name="c_message", cols="30", rows="10" placeholder="Сообщение")
                     input.form__submit(type="submit", value="Отправить сообщение")
 

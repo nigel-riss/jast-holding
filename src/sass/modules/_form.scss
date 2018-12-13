@@ -33,6 +33,21 @@
     }
 }
 
+.form__input-set {
+    @include atTablet {
+        // box model
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+input.form__input {
+    @include atTablet {
+        // box model
+        flex-basis: 48%;
+    }
+}
+
 .form__submit {
     // box model
     padding: 10px 20px;

@@ -12,6 +12,9 @@
 
     @include atDesktopM {
         // box model
+        padding-right: 60px;
+        flex-basis: 32%;
+        margin-right: 1%;
     }
 }
 

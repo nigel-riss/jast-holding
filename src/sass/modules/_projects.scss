@@ -3,6 +3,9 @@
     padding: 30px;
     min-height: 100vh;
 
+    // visual
+    background-color: $brand;
+
     @include atMobile {
         // box model
         padding: 50px;
@@ -28,7 +31,11 @@
 }
 
 .projects__title {
+    // box model
+    margin-bottom: 2em;
+    
     // typography
+    color: $light;
     font-size: 3rem;
 
     @include atDesktopS {
@@ -56,8 +63,8 @@
 
     @include atDesktopM {
         // box model
-        width: 600px;
-        width: auto;
+        width: 620px;
+        padding-right: 60px;
     }
 }
 
