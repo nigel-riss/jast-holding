@@ -15,10 +15,20 @@
     // typography
     font-size: 2rem;
     font-weight: 400;
+
+    @include atDesktopM {
+        // typography
+        font-size: 2.5rem;
+    }
 }
 
 .project__description {
     // typography
     color: $brand;
     line-height: 1.75;
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.25rem;
+    }
 }

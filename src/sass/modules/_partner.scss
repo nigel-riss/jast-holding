@@ -9,6 +9,10 @@
         flex-basis: 40%;
         margin-right: 9%;
     }
+
+    @include atDesktopM {
+        // box model
+    }
 }
 
 .partner img {

@@ -31,6 +31,12 @@
         background-color: transparent;
     }
 
+    @include atDesktopM {
+        // positioning
+        left: calc((100% - 1060px) / 2);
+        width: 400px;
+    }
+
     &--hidden {
         // positioning
         left: -110%;
@@ -41,6 +47,11 @@
 
             // box model
             display: block;
+        }
+
+        @include atDesktopM {
+            // positioning
+            // left: calc((100% - 1060px) / 2);
         }
     }
 }
@@ -64,6 +75,11 @@
         flex-direction: column;
         padding-bottom: 50px;
     }
+
+    @include atDesktopM {
+        // box model
+        padding: 70px;
+    }
 }
 
 .nav__item {
@@ -74,6 +90,11 @@
         // box model
         margin: 10px 25px;
     }
+
+    @include atDesktopM {
+        // box model
+        margin: 10px 0;
+    }
 }
 
 .nav__link {
@@ -82,6 +103,11 @@
     font-size: 1rem;
     font-weight: 300;
     text-decoration: none;
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.125rem;
+    }
 }
 
 .nav__num {
@@ -109,5 +135,10 @@
     @include atDesktopS {
         // typography
         font-size: 2.25rem;
+    }
+
+    @include atDesktopM {
+        // typography
+        font-size: 4rem;
     }
 }

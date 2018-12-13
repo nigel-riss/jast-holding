@@ -30,4 +30,11 @@
         min-height: 620px;
         max-height: 700px;
     }
+
+    @include atDesktopM {
+        // box model
+        // padding: 70px calc((100% - 1060px) / 2);
+        min-height: 760px;
+        max-height: 1000px;
+    }
 }

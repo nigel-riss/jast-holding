@@ -31,6 +31,14 @@
         width: 420px;
         max-height: calc(100% - 140px);
     }
+
+    @include atDesktopM {
+        // positioning
+        // right: calc((100% - 1060px) / 2);
+
+        // box model
+        width: 500px;
+    }
 }
 
 .logo img {

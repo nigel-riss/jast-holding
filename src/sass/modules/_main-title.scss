@@ -33,4 +33,9 @@
         margin-top: 0;
         width: 500px;
     }
+
+    @include atDesktopM {
+        // typography
+        font-size: 5rem;
+    }
 }
