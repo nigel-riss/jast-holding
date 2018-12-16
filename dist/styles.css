@@ -1,3 +1,9 @@
+/*
+    Theme Name: Jast Holding
+    Version: 1.0.0
+    Description: Special theme for Jast Holding Site
+    Author: Yuriy Kurenkov
+*/
 @font-face {
   font-family: 'IBM Plex Sans';
   src: url("./fonts/IBMPlexSans-Bold.woff2") format("woff2"), url("./fonts/IBMPlexSans-Bold.woff") format("woff");
