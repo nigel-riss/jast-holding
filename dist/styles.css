@@ -471,6 +471,7 @@ body {
   @media (min-width: 1200px) {
     .nav {
       left: calc((100% - 1060px) / 2);
+      left: 0;
       width: 400px; } }
   .nav--hidden {
     left: -110%; }
@@ -478,6 +479,10 @@ body {
       .nav--hidden {
         left: 0;
         display: block; } }
+    @media (min-width: 1200px) {
+      .nav--hidden {
+        left: 0;
+        width: 400px; } }
 
 .nav__list {
   margin: 0;

@@ -2,7 +2,7 @@ class MobileMenu {
   constructor() {
     this.menuButton = document.querySelector('.menu-button');
     this.menu = document.querySelector('.nav'),
-    this.menuLinks = document.querySelectorAll('.main-menu__link');
+    this.menuLinks = document.querySelectorAll('.nav__link');
 
     this.events();
   }
@@ -11,13 +11,13 @@ class MobileMenu {
     this.menuButton.addEventListener('click', () => {
       this.toggleMenu();
     });
-    // for(let i = 0; i < menuLinks.length; i++) {
-    //     let link = menuLinks[i];
-    //     link.addEventListener('click', () => {
-    //         menuIcon.classList.remove('mobile-icon--active');
-    //         mobileMenu.classList.remove('main-menu--active');
-    //     });
-    // }
+
+    for(let i = 0; i < this.menuLinks.length; i++) {
+        let link = this.menuLinks[i];
+        link.addEventListener('click', () => {
+            this.toggleMenu();
+        });
+    }
   }
 
   reset() {
