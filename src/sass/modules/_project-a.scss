@@ -14,11 +14,22 @@
     @include atDesktopS {
         // box model
         padding: 70px;
+        display: flex;
+        margin: 0 auto;
     }
 }
 
 .project-a__header {
+    @include atDesktopS {
+        // box model
+        width: 300px;
+        margin-right: 60px;
+    }
 
+    @include atDesktopM {
+        // box model
+        width: 400px;
+    }
 }
 
 .project-a__title {
@@ -26,10 +37,8 @@
     font-size: 3rem;
 
     @include atDesktopS {
-        // box model
-        margin: 0;
-
         // typography
+        padding-top: 40px;
         font-size: 4rem;
     }
 
@@ -51,6 +60,11 @@
 
     // visual
     border: 1px solid $brand;
+
+    @include atTablet {
+        // box model
+        max-width: 300px;
+    }
 }
 
 .project-a__content {
@@ -61,5 +75,18 @@
     @include atTablet {
         // box model
         padding-bottom: 200px;
+    }
+
+    @include atDesktopS {
+        // box model
+        padding-top: 80px;
+        padding-bottom: 0;
+        flex-basis: calc(100% - 300px);
+    }
+    
+    @include atDesktopM {
+        // typography
+        font-size: 1.25rem;
+        flex-basis: calc(100% - 400px);
     }
 }

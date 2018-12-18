@@ -1,6 +1,21 @@
 .breadcrumbs {
     // box model
     padding-top: 80px;
+
+    @include atDesktopS {
+        // positioning
+        position: absolute;
+        top: 0;
+        left: 414px;
+    }
+
+    @include atDesktopM {
+        // positioning
+        left: 514px;
+        
+        // typography
+        font-size: 1.25rem;
+    }
 }
 
 .breadcrumbs__link {
@@ -22,4 +37,9 @@
 .breadcrumbs__current {
     // typography
     color: $brand;
+
+    @include atDesktopM {
+        // typography
+        font-size: 1.25rem;
+    }
 }

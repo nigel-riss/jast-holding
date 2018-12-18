@@ -64,6 +64,11 @@
                 color: $brand;
             }
         }
+
+        @include atDesktopS {
+            // box model
+            display: none;
+        }
     }
 }
 

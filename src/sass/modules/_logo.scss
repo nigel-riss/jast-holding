@@ -9,17 +9,6 @@
     display: block;
     width: calc(100vw - 100px);
 
-    &--project {
-        // positioning
-        bottom: auto;
-        right: auto;
-        top: 50px;
-        left: 50px;
-
-        // box model
-        width: 45px;
-    }
-
     @include atTablet {
         // positioning
         bottom: auto;
@@ -49,6 +38,29 @@
 
         // box model
         width: 500px;
+    }
+
+    &--project {
+        // positioning
+        bottom: auto;
+        right: auto;
+        top: 50px;
+        left: 50px;
+
+        // box model
+        width: 45px;
+
+        @include atTablet {
+            // positioning
+            top: 50px;
+            left: 50px;
+        }
+
+        @include atDesktopS {
+            // positioning
+            top: 70px;
+            left: 70px;
+        }
     }
 }
 

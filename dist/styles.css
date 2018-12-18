@@ -488,6 +488,9 @@ body {
   @media (min-width: 600px) {
     .nav--inner .nav__link {
       color: #4256f5; } }
+  @media (min-width: 1000px) {
+    .nav--inner {
+      display: none; } }
 
 .nav__list {
   margin: 0;
@@ -549,12 +552,6 @@ body {
   z-index: 1;
   display: block;
   width: calc(100vw - 100px); }
-  .logo--project {
-    bottom: auto;
-    right: auto;
-    top: 50px;
-    left: 50px;
-    width: 45px; }
   @media (min-width: 600px) {
     .logo {
       bottom: auto;
@@ -573,6 +570,20 @@ body {
   @media (min-width: 1200px) {
     .logo {
       width: 500px; } }
+  .logo--project {
+    bottom: auto;
+    right: auto;
+    top: 50px;
+    left: 50px;
+    width: 45px; }
+    @media (min-width: 600px) {
+      .logo--project {
+        top: 50px;
+        left: 50px; } }
+    @media (min-width: 1000px) {
+      .logo--project {
+        top: 70px;
+        left: 70px; } }
 
 .logo img {
   display: block;
@@ -886,13 +897,24 @@ body {
       padding: 50px; } }
   @media (min-width: 1000px) {
     .project-a {
-      padding: 70px; } }
+      padding: 70px;
+      display: flex;
+      margin: 0 auto; } }
+
+@media (min-width: 1000px) {
+  .project-a__header {
+    width: 300px;
+    margin-right: 60px; } }
+
+@media (min-width: 1200px) {
+  .project-a__header {
+    width: 400px; } }
 
 .project-a__title {
   font-size: 3rem; }
   @media (min-width: 1000px) {
     .project-a__title {
-      margin: 0;
+      padding-top: 40px;
       font-size: 4rem; } }
   @media (min-width: 1200px) {
     .project-a__title {
@@ -905,6 +927,9 @@ body {
   color: #4256f5;
   text-align: center;
   border: 1px solid #4256f5; }
+  @media (min-width: 600px) {
+    .project-a__link {
+      max-width: 300px; } }
 
 .project-a__content {
   color: #4256f5;
@@ -912,9 +937,27 @@ body {
   @media (min-width: 600px) {
     .project-a__content {
       padding-bottom: 200px; } }
+  @media (min-width: 1000px) {
+    .project-a__content {
+      padding-top: 80px;
+      padding-bottom: 0;
+      flex-basis: calc(100% - 300px); } }
+  @media (min-width: 1200px) {
+    .project-a__content {
+      font-size: 1.25rem;
+      flex-basis: calc(100% - 400px); } }
 
 .breadcrumbs {
   padding-top: 80px; }
+  @media (min-width: 1000px) {
+    .breadcrumbs {
+      position: absolute;
+      top: 0;
+      left: 414px; } }
+  @media (min-width: 1200px) {
+    .breadcrumbs {
+      left: 514px;
+      font-size: 1.25rem; } }
 
 .breadcrumbs__link {
   color: lightgray;
@@ -926,3 +969,6 @@ body {
 
 .breadcrumbs__current {
   color: #4256f5; }
+  @media (min-width: 1200px) {
+    .breadcrumbs__current {
+      font-size: 1.25rem; } }
