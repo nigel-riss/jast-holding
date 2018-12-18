@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="main-header">
         <div class="logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo_white.svg" alt="Jast Holding logo" /></div>
         <h1 class="main-title">Привет, мы — JAST holding.</h1><button class="menu-button">x<div class="menu-button__line menu-button__line--top"></div>
@@ -118,12 +119,14 @@
             <div class="contact__address">236006 Россия, <br>г. Калининград, <br>ул. Театральная, 35 <br>офис 606</div><a
                 class="contact__phone" href="tel:+88002224608">8 (800) 222-46-08</a><a class="contact__mail" href="mailto:info@jastholding.com">info@jastholding.com</a>
         </header>
+
         <div class="contact__form">
-            <form class="form" action="">
-                <div class="form__input-set"><input class="form__input" type="text" name="c_name" placeholder="Имя" /><input
-                        class="form__input" type="email" name="c_email" placeholder="E-mail" /></div><textarea class="form__input"
-                    name="c_message" cols="30" rows="10" placeholder="Сообщение"></textarea><input class="form__submit"
-                    type="submit" value="Отправить сообщение" />
+            <form class="form" action="<?php echo esc_url(home_url('/')); ?>feedback" method="POST">
+                <div class="form__input-set">
+                    <input class="form__input" type="text" name="contact_name" placeholder="Имя" required/>
+                    <input class="form__input" type="email" name="contact_email" placeholder="E-mail" required/></div>
+                    <textarea class="form__input" name="contact_message" cols="30" rows="10" placeholder="Сообщение" required></textarea>
+                    <input class="form__submit" type="submit" value="Отправить сообщение" />
             </form>
         </div>
     </section>
