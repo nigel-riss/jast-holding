@@ -56,6 +56,15 @@
             width: 400px;
         }
     }
+
+    &--inner {
+        @include atTablet {
+            .nav__link {
+                // typography
+                color: $brand;
+            }
+        }
+    }
 }
 
 .nav__list {

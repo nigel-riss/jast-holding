@@ -1,41 +1,25 @@
 .breadcrumbs {
     // box model
-    margin-bottom: 38px;
+    padding-top: 80px;
 }
 
-.breadcrumbs__breadcrumb {
-    // box model
-    display: inline-block;
-    vertical-align: top;
-
+.breadcrumbs__link {
     // typography
-    font-family: $baseFont;
-    font-size: 0.75rem;
+    color: lightgray;
+
     text-decoration: none;
-    color: #cccccc;
 
-    &:after {
-        content: '-';
-
-        // box model
-        margin: 0 3px;
+    &::after {
+        content: " - ";
     }
 
-    &:last-child {
-        &::after {
-            content: none;
-        }
-    }
-
-    &:nth-last-child(2) {
-        &:after {
-            content: '-';
-            color: #000000;
-            font-weight: 500;
-        }
-    }
-    &--active {
+    &:hover {
         // typography
-        color: $brandColor;
+        color: $brand;
     }
+}
+
+.breadcrumbs__current {
+    // typography
+    color: $brand;
 }

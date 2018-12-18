@@ -1,13 +1,65 @@
 .project-a {
+    // positioning
+    position: relative;
+
     // box model
     min-height: 100vh;
     padding: 30px;
+
+    @include atMobile {
+        // box model
+        padding: 50px;
+    }
+
+    @include atDesktopS {
+        // box model
+        padding: 70px;
+    }
 }
 
 .project-a__header {
 
 }
 
-.project-a__content {
+.project-a__title {
+    // typography
+    font-size: 3rem;
 
+    @include atDesktopS {
+        // box model
+        margin: 0;
+
+        // typography
+        font-size: 4rem;
+    }
+
+    @include atDesktopM {
+        // typography
+        font-size: 5rem;
+    }
+}
+
+.project-a__link {
+    // box model
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+
+    // typographyc
+    color: $brand;
+    text-align: center;
+
+    // visual
+    border: 1px solid $brand;
+}
+
+.project-a__content {
+    // typography
+    color: $brand;
+    line-height: 1.5;
+
+    @include atTablet {
+        // box model
+        padding-bottom: 200px;
+    }
 }
