@@ -64,20 +64,32 @@
     <!-- Projects section -->
     <section class="projects" id="projects" >
         <h2 class="projects__title">Наши<br> проекты</h2>
-        <div class="projects__content"><a class="project" href="#">
-                <h3 class="project__title">JAST Charger <small>&rarr;</small></h3>
-                <p class="project__description">Деятельность в сфере HORECA и маркетинга.</p>
-            </a><a class="project" href="#">
-                <h3 class="project__title">JAST agency <small>&rarr;</small></h3>
-                <p class="project__description">Маркетинговые стратегии, Digital, Консалтинг.</p>
-            </a><a class="project" href="#">
-                <h3 class="project__title">IZIway-shop <small>&rarr;</small></h3>
-                <p class="project__description">Интернет-магазин брендовой одежды и обуви. Ритейл.</p>
-            </a><a class="project" href="#">
-                <h3 class="project__title">Lens Vens shop <small>&rarr;</small></h3>
-                <p class="project__description">«LensVens Shop» - это магазин кроссовок в инстаграм,
-                    всё&nbsp;максимально просто.</p>
-            </a></div>
+        <div class="projects__content">
+            <?php
+                $args = array(
+                    'category_name' => 'project'
+                );
+
+                query_posts($args);
+
+                if (have_posts()) {
+                    while(have_posts()) {
+                        the_post();
+
+                        // vars
+                        $post_preview = get_field('preview');
+            ?>
+
+            <a class="project" href="<?php the_permalink(); ?>">
+                <h3 class="project__title"><?php the_title(); ?> <small>&rarr;</small></h3>
+                <p class="project__description"><?php echo $post_preview; ?></p>
+            </a>
+
+            <?php
+                    }
+                }
+            ?>
+        </div>
     </section>
 
     <!-- Partners section -->
