@@ -23,6 +23,13 @@
         // box model
         display: none;
     }
+
+    &--inner {
+        .menu-button__line {
+            // visual
+            background-color: $brand !important;
+        }
+    }
 }
 
 .menu-button:hover {

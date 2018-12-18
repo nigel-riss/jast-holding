@@ -407,6 +407,8 @@ body {
   @media (min-width: 600px) {
     .menu-button {
       display: none; } }
+  .menu-button--inner .menu-button__line {
+    background-color: #4256f5 !important; }
 
 .menu-button:hover .menu-button__line--top {
   top: 4px; }
@@ -544,6 +546,12 @@ body {
   z-index: 1;
   display: block;
   width: calc(100vw - 100px); }
+  .logo--project {
+    bottom: auto;
+    right: auto;
+    top: 50px;
+    left: 50px;
+    width: 45px; }
   @media (min-width: 600px) {
     .logo {
       bottom: auto;
@@ -865,3 +873,7 @@ body {
     color: #ffffff;
     background-color: #4256f5;
     transition: all 0.25s ease-out; }
+
+.project-a {
+  min-height: 100vh;
+  padding: 30px; }
