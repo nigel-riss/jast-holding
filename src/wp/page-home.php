@@ -11,8 +11,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/style.css" />
+
     <title>Jast Holding</title>
+
+    <?php
+        wp_head();
+    ?>
 </head>
 
 <body>
@@ -24,17 +30,24 @@
         </button>
         <nav class="nav nav--hidden">
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" id="about" href="#"><span class="nav__num">01</span> О нас</a></li>
-                <li class="nav__item"><a class="nav__link" id="projects" href="#"><span class="nav__num">02</span>
-                        Наши&nbsp;проекты</a></li>
-                <li class="nav__item"><a class="nav__link" id="partners" href="#"><span class="nav__num">03</span>
-                        Партнёры</a></li>
-                <li class="nav__item"><a class="nav__link" id="contact" href="#"><span class="nav__num">04</span>
-                        Контакты</a></li>
+                <li class="nav__item">
+                    <a class="nav__link" href="<?php echo esc_url(home_url('/')); ?>#about"><span class="nav__num">01</span> О нас</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="<?php echo esc_url(home_url('/')); ?>#projects"><span class="nav__num">02</span>Наши&nbsp;проекты</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="<?php echo esc_url(home_url('/')); ?>#partners"><span class="nav__num">03</span>Партнёры</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="<?php echo esc_url(home_url('/')); ?>#contact"><span class="nav__num">04</span>Контакты</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <section class="about">
+
+    <!-- About section -->
+    <section class="about" id="about">
         <h2 class="about__title">О нас</h2>
         <div class="about__content">
             <p>Наша деятельность распространяется преимущественно на франчайзинговом рынке. Компания была основана в
@@ -47,7 +60,9 @@
                 и&nbsp;инвесторов со всей России и СНГ.</p>
         </div>
     </section>
-    <section class="projects">
+
+    <!-- Projects section -->
+    <section class="projects" id="projects" >
         <h2 class="projects__title">Наши<br> проекты</h2>
         <div class="projects__content"><a class="project" href="#">
                 <h3 class="project__title">JAST Charger <small>&rarr;</small></h3>
@@ -64,7 +79,9 @@
                     всё&nbsp;максимально просто.</p>
             </a></div>
     </section>
-    <section class="partners">
+
+    <!-- Partners section -->
+    <section class="partners" id="partners">
         <h2 class="partners__title">Наши <br>партнёры</h2>
         <div class="partners__content">
             <h3 class="partners__subtitle">Крупнейшие порталы франшиз:</h3>
@@ -81,7 +98,9 @@
             <article class="partner"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/partners/otp.png" alt="ОТП Банк" /></article>
         </div>
     </section>
-    <section class="contact">
+
+    <!-- Contact section -->
+    <section class="contact" id="contact" >
         <header class="contact__header">
             <h2 class="contact__title">Свяжитесь <br>с нами</h2>
             <div class="contact__address">236006 Россия, <br>г. Калининград, <br>ул. Театральная, 35 <br>офис 606</div><a
@@ -96,7 +115,12 @@
             </form>
         </div>
     </section>
+
     <script src="<?php bloginfo('stylesheet_directory'); ?>/main.js"></script>
+
+    <?php
+        wp_footer();
+    ?>
 </body>
 
 </html>
