@@ -136,6 +136,7 @@
     vertical-align: baseline;
 
     // typography
+    pointer-events: none;
     font-size: 4rem;
 
     @include atTablet {
@@ -155,6 +156,6 @@
 
     @include atDesktopM {
         // typography
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }

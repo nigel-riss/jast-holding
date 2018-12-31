@@ -531,6 +531,7 @@ body {
   display: inline-block;
   padding-right: 30px;
   vertical-align: baseline;
+  pointer-events: none;
   font-size: 4rem; }
   @media (min-width: 600px) {
     .nav__num {
@@ -543,7 +544,7 @@ body {
       font-size: 2.25rem; } }
   @media (min-width: 1200px) {
     .nav__num {
-      font-size: 4rem; } }
+      font-size: 3rem; } }
 
 .logo {
   position: absolute;
@@ -972,3 +973,14 @@ body {
   @media (min-width: 1200px) {
     .breadcrumbs__current {
       font-size: 1.25rem; } }
+
+.single {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3; }
+
+.single--hidden {
+  display: none; }
