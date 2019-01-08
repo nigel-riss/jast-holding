@@ -1300,6 +1300,27 @@ body {
   visibility: hidden;
   opacity: 0; }
 
+.single--animated .about__title,
+.single--animated .projects__title,
+.single--animated .partners__title,
+.single--animated .contact__header {
+  animation-name: from-top;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1; }
+
+.single--animated .close-button,
+.single--animated .about__content,
+.single--animated .projects__content,
+.single--animated .partners__content,
+.single--animated .contact__form {
+  animation-name: from-right;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1; }
+
 .close-button {
   position: absolute;
   right: 70px;

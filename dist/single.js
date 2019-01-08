@@ -59,6 +59,7 @@
   var hideAllSections = function () {
     sections.forEach(function (section) {
       section.classList.add('single--hidden');
+      section.classList.remove('single--animated');
     });
     nav.className = 'nav';
   }

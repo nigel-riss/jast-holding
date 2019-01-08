@@ -18,5 +18,28 @@
 }
 
 .single--animated {
+    .about__title,
+    .projects__title,
+    .partners__title,
+    .contact__header {
+        // animation
+        animation-name: from-top;
+        animation-duration: 1s;
+        animation-delay: 0;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+    }
 
+    .close-button,
+    .about__content,
+    .projects__content,
+    .partners__content,
+    .contact__form {
+        // animation
+        animation-name: from-right;
+        animation-duration: 1s;
+        animation-delay: 0;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+    }
 }
