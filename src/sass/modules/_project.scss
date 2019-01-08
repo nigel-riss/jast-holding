@@ -20,17 +20,17 @@
 
 .project__title {
     // box model
-    margin-bottom: 0.5rem;
+    margin-bottom: 15px;
 
     // typography
     color: $light;
     // color: $dark;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 400;
 
     @include atDesktopM {
         // typography
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     small {

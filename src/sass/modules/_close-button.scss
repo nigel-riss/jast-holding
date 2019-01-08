@@ -52,3 +52,11 @@
     // positioning
     transform: translateX(-50%) rotate(-45deg);
 }
+
+.close-button--dark {
+    &::after,
+    &::before {
+        // visual
+        background-color: $brand;
+    }
+}

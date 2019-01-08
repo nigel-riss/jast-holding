@@ -6,9 +6,17 @@
     bottom: 0;
     left: 0;
     z-index: 3;
+
+    // visual
+    transition: all 0.5s ease-out;
 }
 
 .single--hidden {
     // box model
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.single--animated {
+
 }

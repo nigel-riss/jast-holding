@@ -45,6 +45,7 @@
     section.classList.add('single');
     var closeButton = document.createElement('div');
     closeButton.classList.add('close-button');
+    (sectionID === "#partners") ? closeButton.classList.add('close-button--dark') : closeButton.classList.remove('close-button--dark');
     section.appendChild(closeButton);
     closeButton.addEventListener('click', function () {
       hideSection(sectionID);
