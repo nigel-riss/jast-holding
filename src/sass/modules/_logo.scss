@@ -30,6 +30,13 @@
         // box model
         width: 420px;
         max-height: calc(100% - 140px);
+
+        // animation
+        animation-name: glitch-anim-text, from-right;
+        animation-duration: 4s, 1s;
+        animation-delay: 2s, 0;
+        animation-timing-function: linear, ease-in-out;
+        animation-iteration-count: infinite, 1;
     }
 
     @include atDesktopM {

@@ -1,0 +1,54 @@
+.close-button {
+    // positioning
+    position: absolute;
+    right: 70px;
+    top: 70px;
+
+    // box model
+    height: 32px;
+    width: 32px;
+
+    // visual
+    // background-color: red;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    @include atDesktopM {
+        // box model
+        height: 42px;
+        width: 42px;
+    }
+}
+
+.close-button:hover {
+    // positioning
+    transform: rotate(180deg);
+}
+
+.close-button::before,
+.close-button::after {
+    content: "";
+
+    // positioning
+    position: absolute;
+    left: 50%;
+    transform-origin: center center;
+    transform: translateX(-50%);
+
+    // box model
+    width: 2px;
+    height: 100%;
+
+    // visual
+    background-color: $light;
+}
+
+.close-button::before {
+    // positioning
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.close-button::after {
+    // positioning
+    transform: translateX(-50%) rotate(-45deg);
+}

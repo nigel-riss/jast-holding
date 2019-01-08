@@ -13,6 +13,8 @@
 @import "base/global";
 
 // elements
+@import 'modules/glitch';
+@import 'modules/animations';
 @import "modules/main-header";
 @import "modules/main-title";
 @import "modules/menu-button";
@@ -33,3 +35,4 @@
 @import "modules/breadcrumbs";
 
 @import 'modules/single';
+@import 'modules/close-button';

@@ -3,6 +3,9 @@
     min-height: 100vh;
     padding: 30px;
 
+    // visual
+    background-color: $light;
+
     @include atMobile {
         // box model
         padding: 50px;
@@ -28,14 +31,19 @@
 .partners__title {
     // typography
     color: $dark;
-    font-size: 3rem;
+    font-size: 2.5rem;
 
     @include atDesktopS {
         // box model
         margin: 0;
 
         // typography
-        font-size: 4rem;
+        font-size: 3.5rem;
+    }
+
+    @include atDesktopM {
+        // typography
+        font-size: 5rem;
     }
 }
 
