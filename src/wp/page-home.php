@@ -19,6 +19,7 @@
     <?php
         wp_head();
     ?>
+    <!-- <script src='https://www.google.com/recaptcha/api.js?render=6LdVjIcUAAAAAAcl6052uPDHdG8fDt91SPNFCo5O'></script> -->
 </head>
 
 <body>
@@ -126,6 +127,9 @@
                     <input class="form__input" type="text" name="contact_name" placeholder="Имя" required/>
                     <input class="form__input" type="email" name="contact_email" placeholder="E-mail" required/></div>
                     <textarea class="form__input" name="contact_message" cols="30" rows="10" placeholder="Сообщение" required></textarea>
+
+                    <!-- <div class="g-recaptcha" data-sitekey="6LdVjIcUAAAAAAcl6052uPDHdG8fDt91SPNFCo5O"></div> -->
+
                     <input class="form__submit" type="submit" value="Отправить сообщение" />
             </form>
         </div>
@@ -137,6 +141,16 @@
     <?php
         wp_footer();
     ?>
+    <!-- <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LdVjIcUAAAAAAcl6052uPDHdG8fDt91SPNFCo5O', {
+                    action: 'action_name'
+                })
+                .then(function (token) {
+                    // Verify the token on the server.
+                });
+        });
+    </script> -->
 </body>
 
 </html>

@@ -6,8 +6,8 @@
     $c_name         = $_POST["contact_name"];
     $c_email        = $_POST["contact_email"];
     $c_message      = $_POST["contact_message"];
-    // $to = 'manager@jast.tech';
-    $to = 'mr.kurenkov@gmail.com';
+    $to = 'manager@jast.tech';
+    // $to = 'mr.kurenkov@gmail.com';
     $subject = 'Заявка с сайта jastholding.com';
     $headers = array('Content-Type: text/html; charset=UTF-8');
     $content = "Имя: " . $c_name . "<br>Email: " . $c_email . "<br>Сообщение: " .$c_message;
