@@ -136,7 +136,7 @@
     </section>
 
     <script src="<?php bloginfo('stylesheet_directory'); ?>/menu.js"></script>
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/single.js"></script>
+    <!-- <script src="<?php bloginfo('stylesheet_directory'); ?>/single.js"></script> -->
 
     <?php
         wp_footer();

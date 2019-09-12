@@ -5,7 +5,7 @@ const dirs = {
     php: './src/wp/**/*.php',
     css: './dist/styles.css',
     js: './dist/*.js',
-    wp: 'G:/xampp/htdocs/jh/wp-content/themes/jh/'
+    wp: 'F:/xampp/htdocs/jh/wp-content/themes/jh/'
 };
 
 gulp.task('copyPHP', () => {
