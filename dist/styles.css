@@ -658,12 +658,7 @@ body {
   @media (min-width: 1000px) {
     .main-title {
       margin-top: 0;
-      width: 500px;
-      animation-name: glitch-anim-text, from-top;
-      animation-duration: 4s, 1s;
-      animation-delay: 2s, 0;
-      animation-timing-function: linear, ease-in-out;
-      animation-iteration-count: infinite, 1; } }
+      width: 500px; } }
   @media (min-width: 1200px) {
     .main-title {
       font-size: 5rem; } }
@@ -749,12 +744,7 @@ body {
       background-color: transparent; } }
   @media (min-width: 1000px) {
     .nav {
-      width: 250px;
-      animation-name: glitch-anim-text, from-bottom;
-      animation-duration: 4s, 1s;
-      animation-delay: 2s, 0;
-      animation-timing-function: linear, ease-in-out;
-      animation-iteration-count: infinite, 1; } }
+      width: 250px; } }
   @media (min-width: 1200px) {
     .nav {
       left: calc((100% - 1060px) / 2);
@@ -816,7 +806,8 @@ body {
 
 .nav__link:hover {
   transform: translateY(-10px);
-  color: #000000;
+  color: #4256f5;
+  color: red;
   transition: all 0.25s ease-in; }
 
 .nav__num {
