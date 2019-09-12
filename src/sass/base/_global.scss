@@ -8,6 +8,17 @@ html {
 body {
     // box model
     box-sizing: border-box;
+
+    // snapping
+    // scroll-snap-type: mandatory;
+    // scroll-snap-points-y: repeat(100vh);
+    // // scroll-snap-type: y proximity;
+    // scroll-snap-type: y mandatory;
+}
+
+section {
+    // snapping
+    scroll-snap-align: start;
 }
 
 html, body {

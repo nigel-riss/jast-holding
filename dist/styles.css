@@ -334,6 +334,9 @@ html {
 body {
   box-sizing: border-box; }
 
+section {
+  scroll-snap-align: start; }
+
 *,
 *::before,
 *::after {
@@ -809,6 +812,9 @@ body {
   color: #4256f5;
   color: red;
   transition: all 0.25s ease-in; }
+  @media (min-width: 1000px) {
+    .nav__link:hover {
+      color: #000000; } }
 
 .nav__num {
   transform: translateY(10px);

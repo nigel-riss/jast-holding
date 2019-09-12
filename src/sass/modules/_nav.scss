@@ -155,6 +155,19 @@
 
     // visual
     transition: all 0.25s ease-in;
+
+    // // animation
+    // animation-name: glitch-anim-text, from-bottom;
+    // animation-duration: 4s, 1s;
+    // animation-delay: 2s, 0;
+    // animation-timing-function: linear, ease-in-out;
+    // animation-iteration-count: infinite, 1;
+
+    @include atDesktopS {
+        // box model
+        // typography
+        color: $dark;
+    }
 }
 
 .nav__num {
